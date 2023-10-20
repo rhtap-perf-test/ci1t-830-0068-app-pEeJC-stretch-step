@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-kpvt
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0068-tenant/ci1t-830-0068-app/devfile-sample-kpvt@sha256:59f06e2a002ccffe74a04d9e9ccba47b07f5c59ca8daa9ff0935709a2b311833
+        name: my-nodejs
+        resources: {}
+status: {}
